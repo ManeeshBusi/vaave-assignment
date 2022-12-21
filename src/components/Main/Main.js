@@ -2,8 +2,8 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 // import {SafeAreaView} from 'react-native-safe-area-context';
 
-const Main = ({children}) => {
-  return <View style={styles.mainContainer}>{children}</View>;
+const Main = ({children, newStyle}) => {
+  return <View style={[styles.mainContainer, newStyle]}>{children}</View>;
 };
 
 export default Main;
@@ -11,7 +11,8 @@ export default Main;
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    padding: 18,
+    paddingHorizontal: 8,
+    paddingBottom: 8,
     // backgroundColor: 'skyblue',
   },
 });

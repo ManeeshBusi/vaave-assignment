@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
     height: 62,
     // marginBottom: 16,
     padding: 6,
-    backgroundColor: '#45FFBC',
+    // backgroundColor: '#45FFBC',
+    backgroundColor: '#bbb',
   },
   subContainer: {
     flex: 1,
@@ -27,7 +28,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 24,
     borderWidth: 2,
-    borderColor: 'black',
+    borderColor: '#555',
     justifyContent: 'center',
     // padding: 2,
   },

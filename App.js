@@ -15,7 +15,11 @@ const App = () => {
     <View style={styles.rootContainer}>
       <Provider store={store}>
         <NavigationContainer>
-          <Stack.Navigator screenOptions={{headerShown: false}}>
+          <Stack.Navigator
+            screenOptions={{
+              headerShown: false,
+              // contentStyle: {backgroundColor: '#a9f5d9'},
+            }}>
             <Stack.Screen
               name="Home"
               component={Home}

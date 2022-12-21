@@ -88,7 +88,8 @@ const HomeScreen = ({navigation}) => {
         </>
       ) : (
         <>
-          <Main>
+          {/* eslint-disable-next-line react-native/no-inline-styles */}
+          <Main newStyle={{paddingTop: 8}}>
             {openSearch ? (
               <FlatList
                 data={filtered}

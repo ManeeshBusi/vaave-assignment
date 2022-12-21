@@ -41,13 +41,12 @@ const PostScreen = ({route}) => {
         </>
       ) : (
         <>
-          <Main>
-            <ScrollView>
+          <ScrollView>
+            <View style={styles.imgContainer}>
+              <Image style={styles.img} source={{uri: img}} />
+            </View>
+            <Main>
               <Card>
-                <View style={styles.imgContainer}>
-                  <Image style={styles.img} source={{uri: img}} />
-                </View>
-
                 <View style={styles.heading}>
                   <View style={styles.titleContainer}>
                     <Text style={styles.title}>{post.title}</Text>
@@ -71,8 +70,8 @@ const PostScreen = ({route}) => {
                   </View>
                 ))}
               </View>
-            </ScrollView>
-          </Main>
+            </Main>
+          </ScrollView>
         </>
       )}
     </>
